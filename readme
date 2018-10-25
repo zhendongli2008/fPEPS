@@ -1,0 +1,42 @@
+--------------------------------------------------------------------------------
+ Fermonic PEPS using parity conserving tensors
+--------------------------------------------------------------------------------
+
+ - bsarray and parray classes
+ - einsum 
+ - create repo
+ - general parray and einsum
+ - initialization of peps,
+   in particular merge & transpose of parray
+ - operations: mps_dot & mpo_apply_to_mps 
+ - peps_dot and peps contraction
+ - autograd optimization
+ - Hessenberg hamiltonian - fix bug for 3*3 case [fixed for Sp*Sm]
+ - autograd tested against finite difference
+ - save & load PEPS => callback
+ - SVD-mps/mpo compression for larger systems
+ - fix bugs in <A|H|B> 
+ - Monte-Carlo - seems to be very suitable for long-range Hamiltoinan;
+   we only needs to read out the coefficients <n|PEPS> for given |n>.
+   Note: <n|H|PEPS> is required to avoid additional RI.
+ - fermionic operations
+   Starting from 2-by-2: 
+    Q1: how operators are represented and act on PEPS ? 
+    Q2: how <PEPS|H|PEPS> can be converted to bosonic TNS diagrams?
+    Q3: particle number projector? any advantage 
+
+--------------------------------------------------------------------------------
+ TODOs
+--------------------------------------------------------------------------------
+
+ - memory issue? => larger systems
+
+ - optimize the contraction scheme for <PEPS|H|PEPS>;
+   reusing intermediates or using PEPO
+
+ - regularize the PEPS for better numerical stability! 
+   divide each by max element
+
+ - eigenvalue optimization for small problem
+
+--------------------------------------------------------------------------------
