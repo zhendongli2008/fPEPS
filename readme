@@ -40,7 +40,9 @@
  - eigenvalue optimization for small problem
 
 --------------------------------------------------------------------------------
-To run it:
+ To run it:
 --------------------------------------------------------------------------------
-Change name for directory from fPEPS to fpeps2017.
-Go to fermions and run.
+ Requirement: autograd
+ Download and change name for directory from fPEPS to fpeps2017.
+ Go to fermions and run, e.g., peps2by2.py.
+ 
