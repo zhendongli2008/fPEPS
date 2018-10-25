@@ -40,3 +40,7 @@
  - eigenvalue optimization for small problem
 
 --------------------------------------------------------------------------------
+To run it:
+--------------------------------------------------------------------------------
+Change name for directory from fPEPS to fpeps2017.
+Go to fermions and run.
